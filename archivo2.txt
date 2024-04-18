@@ -1,1 +1,1 @@
-Este proyecto simulará una barra de navegación en html5.
+Este proyecto simulará una barra de navegación en html5 y CSS.
