@@ -1,0 +1,51 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+    font-size: 62.5%;
+}
+
+/*Variables*/
+:root {
+    /*Gama de colores*/
+    --color_primario: #6307da;
+    --color_secundario: #f94343;
+    --color_blanco: #ffffff;
+    --color_negro: #000000;
+}
+
+/*Estilos principales*/
+h1 {
+    font-size: 5rem;
+    color: var(--color_primario);
+    text-align: center;
+}
+
+a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color_secundario);
+}
+
+/*Estilos*/
+.header {
+max-width: 1200px;
+margin: 0 auto;
+ & h1 {
+    width: 100%;
+ }
+}
+
+.barra_navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
