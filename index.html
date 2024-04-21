@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base navegación</title>
-    <link rel="stylesheet" href="Css/style.css" >
+    <link rel="stylesheet" href="Css/style.css">
+    <script text="java/javascript">
+        var botonTema;
+        var estado = "original";
+        function bgGreen() {
+            botonTema = document.querySelector("body");
+
+            if (estado === "original") {
+                // Cambiar color
+                botonTema.classList.add("green");
+                estado = "green";
+            }else {
+                // Revertir al color original
+                botonTema.classList.remove("green");
+                botonTema.classList.add("original");
+                estado = "original";
+            }
+        }
+    </script>
 </head>
-<body>
+
+<body class="original">
     <header class="header">
-        <h1>Aqui irá el titulo</h1>
+        <div class="titulo">
+            <h1>Aqui irá el titulo</h1>
+            <div class="tema">
+                <button onclick="bgGreen()">Tema</button>
+            </div>
+        </div>
         <nav class="barra_navegacion">
             <a href="#">Nosotros</a>
             <a href="#">Productos</a>
@@ -18,4 +43,5 @@
         </nav>
     </header>
 </body>
+
 </html>
