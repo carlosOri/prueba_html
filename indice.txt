@@ -1,1 +1,1 @@
-Este proyecto simulará una barra de navegación en html5 y CSS.
+Este proyecto simulará una barra de navegación, y cambios de colores para el body con HTML5, CSS y JAVASCRIPT.
