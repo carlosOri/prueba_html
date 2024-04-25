@@ -15,8 +15,13 @@
                 // Cambiar color
                 botonTema.classList.add("green");
                 estado = "green";
-            }else {
-                // Revertir al color original
+            }else if(estado === "green") {
+                // Revertir al color green
+                botonTema.classList.add("red");
+                estado = "red";
+            }else if (estado === "red") {
+                //volver a original
+                botonTema.classList.remove("red");
                 botonTema.classList.remove("green");
                 estado = "original";
             }
