@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base navegación</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script text="java/javascript">
+        var botonTema;
+        var estado = "original";
+        function bgChange() {
+            botonTema = document.querySelector("body");
+            if (estado === "original") {
+                // Cambiar color
+                botonTema.classList.add("green");
+                estado = "green";
+            }else if(estado === "green") {
+                // Revertir al color green
+                botonTema.classList.add("red");
+                estado = "red";
+            }else if (estado === "red") {
+                //volver a original
+                botonTema.classList.remove("red");
+                botonTema.classList.remove("green");
+                estado = "original";
+            }
+        }
+    </script>
+</head>
+
+<body class="original">
+    <header class="header">
+        <div class="titulo">
+            <h1>Aqui irá el titulo</h1>
+            <div class="tema">
+                <button onclick="bgChange()">Tema</button>
+            </div>
+        </div>
+        <nav class="barra_navegacion">
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacta con nostros</a>
+            <a href="#">Registro</a>
+        </nav>
+    </header>
+</body>
+
+</html>
